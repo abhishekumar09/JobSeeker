@@ -1,12 +1,12 @@
 import mongoose from "mongoose";
 
 const applicationSchema = new mongoose.Schema({
-    job:{
+    job:{    // kismein apply kr rha hei
         type:mongoose.Schema.Types.ObjectId,
         ref:'Job',
         required:true
     },
-    applicant:{
+    applicant:{     // kon apply kr rha hei which user/applicant
         type:mongoose.Schema.Types.ObjectId,
         ref:'User',
         required:true
@@ -17,5 +17,4 @@ const applicationSchema = new mongoose.Schema({
         default:'pending'
     }
 },{timestamps:true});
-
-export const Aplication = mongoose.Schema("Application", applicationSchema);
+export const Application  = mongoose.model("Application", applicationSchema);

@@ -38,7 +38,7 @@ export const applyJob = async (req, res) => {
       applicant: userId,
     });
 
-    job.applications.push(newApplication._id);
+    job.applications.push(newApplication._id);  // new user update in application.model nd add in array
     await job.save();
     return res.status(201).json({
       message: "Job applied successfully.",
@@ -48,6 +48,7 @@ export const applyJob = async (req, res) => {
     console.log(error);
   }
 };
+// jitne applied job hue hein voh dekhna hei  ismein show krega kitni mein apply kiye ho with the help of applicant id and shortlist hue ki nhi all data 
 export const getAppliedJobs = async (req, res) => {
   try {
     const userId = req.id;
