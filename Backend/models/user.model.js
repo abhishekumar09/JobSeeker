@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema(
       bio: { type: String },
       skills: [{ type: String }],
       resume: { type: String }, // url to resume file
-      resumeOriginalName: { type: string },
+      resumeOriginalName: { type: String },
       company: { type: mongoose.Schema.Types.ObjectId, ref: "Company" }, //we store object id to generate relation between user table and recuriter table
       profilePhoto: {
         type: String,

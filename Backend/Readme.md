@@ -56,3 +56,36 @@ export default connectDB;
 
 
 // In  controller we write login of all website
+
+
+
+
+
+
+
+
+// middleware -: means jo request and response k beech mein km krta hei
+
+
+
+
+
+
+
+// params :  req.params refers to an object containing route parameters parsed from the URL path. 
+
+
+definition -:
+
+params property is an object containing properties mapped to the named route “parameters”. For example, if you have the route /student/:id, then the “id” property is available as req.params.id. This object defaults to {}. Syntax: req.params.
+
+
+
+
+
+
+
+
+
+What is the difference between params and query in node?
+query is used for getting the query string values and req. params is used for getting the route parameters.
