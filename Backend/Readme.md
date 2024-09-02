@@ -88,4 +88,4 @@ params property is an object containing properties mapped to the named route “
 
 
 What is the difference between params and query in node?
-query is used for getting the query string values and req. params is used for getting the route parameters.
+query is used for getting the query string values and req. params is used for getting the route parameters...
